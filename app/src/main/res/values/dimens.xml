@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="characteristics">20sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="login_button_padding_horizontal">32sp</dimen>
+    <dimen name="login_button_padding_vertical">12sp</dimen>
+    <dimen name="login_button_text">34sp</dimen>
+    <dimen name="login_margin">24sp</dimen>
+    <dimen name="login_edit_text">24sp</dimen>
+    <dimen name="login_edit_text_min">48dp</dimen>
+    <dimen name="title_size">48sp</dimen>
+    <dimen name="input_radius">8sp</dimen>
+    <dimen name="input_stroke">4sp</dimen>
+    <dimen name="input_horizontal_padding">18sp</dimen>
+    <dimen name="input_vertical_padding">12sp</dimen>
+    <dimen name="search_right_padding">28sp</dimen>
+    <dimen name="search_text_size">24sp</dimen>
+    <dimen name="arrow_button_size">24dp</dimen>
+    <dimen name="list_height_size">490sp</dimen>
+</resources>

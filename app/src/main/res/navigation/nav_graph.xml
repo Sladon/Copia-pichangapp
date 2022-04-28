@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="cl.uandes.pichangapp.views.signin.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/loginToRegister"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/loginToHome"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="cl.uandes.pichangapp.views.signin.RegisterFragment"
+        android:label="register_fragment"
+        tools:layout="@layout/register_fragment" >
+        <action
+            android:id="@+id/registerToLogin"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="cl.uandes.pichangapp.views.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/homeToTeamList"
+            app:destination="@id/teamListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/teamListFragment"
+        android:name="cl.uandes.pichangapp.views.home.TeamListFragment"
+        android:label="fragment_team_list"
+        tools:layout="@layout/fragment_team_list" >
+        <action
+            android:id="@+id/teamListToTeamDetails"
+            app:destination="@id/teamDetails" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/teamDetails"
+        android:name="cl.uandes.pichangapp.views.home.TeamDetails"
+        tools:layout="@layout/team_details_fragment">
+        <argument
+            android:name="teamName"
+            android:defaultValue="Fighter"
+            app:argType="string" />
+    </fragment>
+</navigation>
